@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* small theme helpers */
+:root {
+  --bg: #0b0b0d;
+  --muted: #94a3b8;
+}
+
+/* example custom utility */
+.btn-primary {
+  @apply inline-block px-5 py-2 rounded-lg bg-primary text-white font-semibold shadow;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* small theme helpers */
+:root {
+  --bg: #0b0b0d;
+  --muted: #94a3b8;
+}
+
+/* example custom utility */
+.btn-primary {
+  @apply inline-block px-5 py-2 rounded-lg bg-primary text-white font-semibold shadow;
+}
+
+.card {
+  @apply bg-gray-900 rounded-xl p-4 transition-transform duration-300;
+  border: 1px solid transparent;
+}
+
+.card:hover {
+  border-color: #6e52f7; /* violet fluo */
+  box-shadow: 0 0 15px rgba(110, 82, 247, 0.7); /* glow violet */
+}
+#contact {
+  @apply transition-transform duration-300 rounded-xl border border-transparent;
+}
+
+#contact:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(110, 82, 247, 0.7); /* glow violet fluo */
+  border-color: #6e52f7;
+}

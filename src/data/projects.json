@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "title": "Portfolio EFREI",
+    "type": "Projet école",
+    "description": "Portfolio complet en HTML/CSS/JS avec animations et SPA.",
+    "stack": ["HTML", "CSS", "JS"]
+  },
+{
+  "id": 2,
+  "title": "ShopShop API",
+  "type": "Projet école",
+  "description": "API REST en Node.js pour gérer des commandes et des produits.",
+  "stack": ["Node.js", "Express", "MongoDB"]
+},
+{
+  "id": 3,
+  "title": "Todo App Vue.js",
+  "type": "Projet perso",
+  "description": "Application de gestion de tâches avec composants Vue réutilisables.",
+  "stack": ["Vue.js", "Vite", "Tailwind"]
+},
+{
+  "id": 4,
+  "title": "Dashboard Data",
+  "type": "Projet perso",
+  "description": "Dashboard d’analyse de données avec graphiques interactifs.",
+  "stack": ["React", "Chart.js", "API REST"]
+},
+{
+  "id": 5,
+  "title": "Site Recettes",
+  "type": "Projet école",
+  "description": "Application web avec recherche, filtres et gestion des favoris.",
+  "stack": ["HTML", "CSS", "JavaScript"]
+},
+{
+  "id": 6,
+  "title": "E-commerce Minimal",
+  "type": "Projet perso",
+  "description": "Mini site d’e-commerce avec panier, produits et paiement fictif.",
+  "stack": ["Next.js", "Tailwind", "Firebase"]
+}
+
+]
