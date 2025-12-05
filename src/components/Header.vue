@@ -25,5 +25,36 @@ import DarkModeToggle from "./DarkModeToggle.vue";
 </template>
 
 <style scoped>
-/* nothing */
+/* Barre violette sous le lien actif */
+ul li a {
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.2s;
+}
+
+ul li a.router-link-active::after,
+ul li a.router-link-exact-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 3px;
+  background-color: #8b5cf6; /* Violet Tailwind */
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+/* Optionnel : effet hover */
+ul li a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 3px;
+  background-color: #a78bfa; /* violet plus clair au hover */
+  opacity: 0.5;
+  border-radius: 9999px;
+}
 </style>

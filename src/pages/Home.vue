@@ -1,5 +1,45 @@
 <template>
   <Hero />
+  <!-- Section À propos -->
+<section id="about" class="mt-20 max-w-3xl mx-auto px-6">
+  <h2 class="text-3xl font-bold text-primary text-center mb-6">À propos</h2>
+  
+  <p class="text-gray-300 text-justify">
+    Je m’appelle <strong>Nathan Fernandez Puente</strong>, actuellement en 3ᵉ année de Bachelor Développeur Web & Data à l’EFREI Bordeaux. Je suis à la recherche d’une alternance en développement web et mobile pour mettre en pratique mes compétences techniques et approfondir mes connaissances en entreprise.
+  </p>
+
+  <p class="text-gray-300 mt-4">
+    Mon rythme d’alternance évolue ainsi :
+  </p>
+  <ul class="text-gray-300 list-disc list-inside ml-6 mb-4">
+    <li>Jusqu’à fin décembre 2025 : 1 semaine en entreprise / 2 semaines à l’école</li>
+    <li>De janvier à avril 2026 : 2 semaines en entreprise / 1 semaine à l’école</li>
+    <li>À partir du 27 avril 2026 : 100% en entreprise</li>
+  </ul>
+
+  <p class="text-gray-300 text-justify">
+   J’ai réalisé deux stages en entreprise. Lors de mon stage chez SYENSQO (mai-juin 2024),
+j’ai développé une application web interactive avec Python (Plotly Dash et Pandas),
+permettant la visualisation et l’analyse de données. Plus récemment, chez DEDALUS
+(mai-juin 2025), j’ai programmé des flux automatisés avec Power Automate vers Power BI,
+et conçu des tableaux de bord interactifs intégrant des calculs de KPI. Ces projets m’ont
+permis de combiner mes compétences en développement et en data afin de répondre à
+des besoins concrets de l’entreprise.
+  </p>
+
+  <p class="text-gray-300 text-justify mt-4">
+    Passionné par la technologie, le design UX/UI et la visualisation de données, je maîtrise des outils comme <strong>HTML/CSS, JavaScript, NodeJS, Vue.js, Nuxt, PHP, Symfony, React Native, Python, Java</strong>, ainsi que des bases de données <strong>SQL, PostgreSQL, MongoDB, MariaDB</strong> et des outils de business intelligence comme <strong>Power BI et Excel</strong>. J’évolue également dans des environnements professionnels utilisant <strong>Docker</strong> et <strong>Linux (Debian)</strong>.
+  </p>
+
+  <p class="text-gray-300 text-justify mt-4">
+    Reconnu pour mon esprit collaboratif, ma persévérance et ma curiosité, je m’investis pleinement dans chaque projet et suis toujours prêt à apprendre et à relever de nouveaux défis.
+  </p>
+
+  <p class="text-gray-300 text-justify mt-4">
+    En dehors du travail et des études, je suis passionné par le <strong>football, le ski, la course à pied</strong> et j’aime découvrir de nouveaux horizons à travers mes voyages en <strong>Italie, Espagne, Guadeloupe</strong> et <strong>Portugal</strong>.
+  </p>
+</section>
+
 
   <!-- Section Compétences -->
   <section id="skills" class="mt-20 max-w-5xl mx-auto px-6">
@@ -29,19 +69,6 @@
       </div>
     </div>
   </section>
-
-  <!-- Section À propos -->
-<section id="about" class="mt-20 max-w-3xl mx-auto px-6">
-  <h2 class="text-3xl font-bold text-primary text-center mb-6">À propos</h2>
-  <p class="text-gray-300  text-justify">
-    Étudiant en 3ᵉ année de Bachelor Développement Web & Data, je suis passionné par la création d’applications et de sites web performants, ainsi que par l’analyse et la visualisation de données. 
-    Au cours de mes différentes expériences professionnelles, j’ai travaillé sur le développement de webapps interactives, la mise en forme de bases de données et la création de dashboards pour le suivi de projets et l’aide à la décision. 
-    J’ai également participé à l’automatisation de rapports et à la connexion d’outils métiers avec des solutions BI comme Power BI et Excel. 
-    Curieux et persévérant, j’aime apprendre de nouvelles technologies et améliorer constamment mes compétences en programmation, notamment avec HTML, CSS, JavaScript, Vue.js, NodeJS, Python et R. 
-    Rigoureux et collaboratif, je valorise le travail structuré et efficace au sein d’équipes dynamiques, tout en gardant un intérêt particulier pour l’UX/UI et la création d’expériences utilisateurs intuitives et agréables. 
-    Mon objectif est de contribuer à des projets ambitieux, que ce soit en alternance, en mission freelance ou dans des environnements innovants, en mettant mes compétences techniques et analytiques au service d’applications et de solutions de qualité.
-  </p>
-</section>
 
   <!-- Section Contact -->
   <section id="contact" class="mt-20 max-w-3xl mx-auto px-6">

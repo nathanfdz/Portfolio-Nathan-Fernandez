@@ -13,7 +13,12 @@
       >
         Voir mes projets
       </router-link>
-
+      <button
+        @click="scrollToSection('about')"
+        class="px-6 py-3 font-bold bg-primary rounded-lg hover:bg-purple-700 transition hover:text-white"
+      >
+        À propos
+      </button>
       <button
         @click="scrollToSection('skills')"
         class="px-6 py-3 font-bold bg-primary rounded-lg hover:bg-purple-700 transition hover:text-white"
@@ -28,12 +33,7 @@
         Services
       </button>
 
-      <button
-        @click="scrollToSection('about')"
-        class="px-6 py-3 font-bold bg-primary rounded-lg hover:bg-purple-700 transition hover:text-white"
-      >
-        À propos
-      </button>
+
             <button
         @click="scrollToSection('contact')"
         class="px-6 py-3 font-bold bg-primary rounded-lg hover:bg-purple-700 transition hover:text-white"
