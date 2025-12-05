@@ -9,7 +9,7 @@ import DarkModeToggle from "./DarkModeToggle.vue";
   >
     <nav class="container mx-auto flex items-center justify-between p-4">
       <div class="flex items-center gap-4">
-        <router-link to="/" class="text-xl font-bold text-indigo-400">Etudiant.dev</router-link>
+        <router-link to="/" class="text-xl font-bold text-indigo-400">Nathan Fernandez Puente</router-link>
       </div>
 
       <div class="flex items-center gap-4">

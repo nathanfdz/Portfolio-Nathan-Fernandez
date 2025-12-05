@@ -1,6 +1,6 @@
 <template>
   <section class="flex flex-col items-center justify-center min-h-screen text-center pt-28">
-    <h1 class="text-5xl font-bold text-white">Etudiant.Dev</h1>
+    <h1 class="text-5xl font-bold text-white">Nathan Fernandez Puente</h1>
     <h2 class="text-xl text-gray-400 mt-2">Développeur Web & Application</h2>
     <p class="mt-4 max-w-xl text-gray-300">
       Je conçois des applications web et mobile
