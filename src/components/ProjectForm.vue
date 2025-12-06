@@ -40,7 +40,7 @@
         @click="addStack"
         class="px-4 py-2 bg-indigo-600 rounded-md w-full sm:w-auto"
       >
-        Add
+        Ajtouer une techno
       </button>
     </div>
 
@@ -71,15 +71,15 @@
         type="submit"
         class="btn-primary w-full sm:w-auto"
       >
-        Ajouter
+        Ajouter un projet
       </button>
     </div>
   </form>
 </template>
 
 <script setup>
-import { ref } from "vue";
 import { useProjects } from "@/composables/useProjects";
+import { ref } from "vue";
 
 const { addProject } = useProjects();
 
