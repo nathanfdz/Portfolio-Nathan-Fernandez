@@ -4,7 +4,7 @@
   >
     <Header />
 
-    <main class="container mx-auto px-6">
+    <main class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-6">
       <!-- Transition entre routes -->
       <transition name="fade-slide" mode="out-in">
         <RouterView />

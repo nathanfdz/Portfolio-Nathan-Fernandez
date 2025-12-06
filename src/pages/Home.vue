@@ -2,23 +2,23 @@
   <Hero />
 
   <!-- Section À propos -->
-  <section id="about" class="mt-20 max-w-3xl mx-auto px-6">
+  <section id="about" class="mt-20 max-w-3xl mx-auto px-4 sm:px-6 md:px-6 lg:px-6">
     <h2 class="text-3xl font-bold text-primary dark:text-primary text-center mb-6">À propos</h2>
     
-    <p class="text-gray-900 dark:text-gray-100 text-justify">
+    <p class="text-gray-900 dark:text-gray-100 text-justify sm:text-base text-sm">
       Je m’appelle <strong>Nathan Fernandez Puente</strong>, actuellement en 3ᵉ année de Bachelor Développeur Web & Data à l’EFREI Bordeaux. Je suis à la recherche d’une alternance en développement web et mobile pour mettre en pratique mes compétences techniques et approfondir mes connaissances en entreprise.
     </p>
 
-    <p class="text-gray-900 dark:text-gray-100 mt-4">
+    <p class="text-gray-900 dark:text-gray-100 mt-4 sm:text-base text-sm">
       Mon rythme d’alternance évolue ainsi :
     </p>
-    <ul class="text-gray-900 dark:text-gray-100 list-disc list-inside ml-6 mb-4">
+    <ul class="text-gray-900 dark:text-gray-100 list-disc list-inside ml-6 mb-4 sm:text-base text-sm">
       <li>Jusqu’à fin décembre 2025 : 1 semaine en entreprise / 2 semaines à l’école</li>
       <li>De janvier à avril 2026 : 2 semaines en entreprise / 1 semaine à l’école</li>
       <li>À partir du 27 avril 2026 : 100% en entreprise</li>
     </ul>
 
-    <p class="text-gray-900 dark:text-gray-100 text-justify mt-2">
+    <p class="text-gray-900 dark:text-gray-100 text-justify mt-2 sm:text-base text-sm">
       J’ai réalisé deux stages en entreprise. Lors de mon stage chez SYENSQO (mai-juin 2024),
       j’ai développé une application web interactive avec Python (Plotly Dash et Pandas),
       permettant la visualisation et l’analyse de données. Plus récemment, chez DEDALUS
@@ -28,27 +28,27 @@
       des besoins concrets de l’entreprise.
     </p>
 
-    <p class="text-gray-900 dark:text-gray-100 text-justify mt-4">
+    <p class="text-gray-900 dark:text-gray-100 text-justify mt-4 sm:text-base text-sm">
       Passionné par la technologie, le design UX/UI et la visualisation de données, je maîtrise des outils comme <strong>HTML/CSS, JavaScript, NodeJS, Vue.js, Nuxt, PHP, Symfony, React Native, Python, Java</strong>, ainsi que des bases de données <strong>SQL, PostgreSQL, MongoDB, MariaDB</strong> et des outils de business intelligence comme <strong>Power BI et Excel</strong>. J’évolue également dans des environnements professionnels utilisant <strong>Docker</strong> et <strong>Linux (Debian)</strong>.
     </p>
 
-    <p class="text-gray-900 dark:text-gray-100 text-justify mt-4">
+    <p class="text-gray-900 dark:text-gray-100 text-justify mt-4 sm:text-base text-sm">
       Reconnu pour mon esprit collaboratif, ma persévérance et ma curiosité, je m’investis pleinement dans chaque projet et suis toujours prêt à apprendre et à relever de nouveaux défis.
     </p>
 
-    <p class="text-gray-900 dark:text-gray-100 text-justify mt-4">
+    <p class="text-gray-900 dark:text-gray-100 text-justify mt-4 sm:text-base text-sm">
       En dehors du travail et des études, je suis passionné par le <strong>football, le ski, la course à pied</strong> et j’aime découvrir de nouveaux horizons à travers mes voyages en <strong>Italie, Espagne, Guadeloupe</strong> et <strong>Portugal</strong>.
     </p>
   </section>
 
   <!-- Section Compétences -->
-  <section id="skills" class="mt-20 max-w-5xl mx-auto px-6">
+  <section id="skills" class="mt-20 max-w-5xl mx-auto px-4 sm:px-6 md:px-6 lg:px-6">
     <h2 class="text-3xl font-bold text-primary dark:text-primary text-center mb-6">Compétences</h2>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
       <div
         v-for="skill in skills"
         :key="skill"
-        class="card bg-gradient-to-r from-purple-700 via-indigo-600 to-blue-500 hover:scale-105 transition transform"
+        class="card bg-gradient-to-r from-purple-700 via-indigo-600 to-blue-500 hover:scale-105 transition transform p-4 text-center sm:text-base text-sm"
       >
         <p class="text-white font-semibold">{{ skill }}</p>
       </div>
@@ -56,22 +56,22 @@
   </section>
 
   <!-- Section Services -->
-  <section id="services" class="mt-20 max-w-5xl mx-auto px-6">
+  <section id="services" class="mt-20 max-w-5xl mx-auto px-4 sm:px-6 md:px-6 lg:px-6">
     <h2 class="text-3xl font-bold text-primary dark:text-primary text-center mb-6">Services</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
       <div
         v-for="service in services"
         :key="service.title"
-        class="card bg-gradient-to-r from-purple-700 via-indigo-600 to-blue-500 hover:scale-105 transition transform p-6 text-white"
+        class="card bg-gradient-to-r from-purple-700 via-indigo-600 to-blue-500 hover:scale-105 transition transform p-4 sm:p-6 text-white"
       >
         <h3 class="font-bold text-lg mb-2">{{ service.title }}</h3>
-        <p class="text-gray-200">{{ service.desc }}</p>
+        <p class="text-gray-200 sm:text-sm text-xs">{{ service.desc }}</p>
       </div>
     </div>
   </section>
 
   <!-- Section Contact -->
-  <section id="contact" class="mt-20 max-w-3xl mx-auto px-6">
+  <section id="contact" class="mt-20 max-w-3xl mx-auto px-4 sm:px-6 md:px-6 lg:px-6">
     <h2 class="text-3xl font-bold text-primary dark:text-primary text-center mb-6">Contact</h2>
     <ContactForm />
   </section>
