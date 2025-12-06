@@ -1,26 +1,78 @@
 <template>
-  <form @submit.prevent="onSubmit" class="card space-y-4">
-    <h3 class="text-lg font-semibold text-white">Ajouter un projet</h3>
+  <form @submit.prevent="onSubmit" class="card space-y-4 p-4 sm:p-6 bg-gray-900/80 rounded-xl">
+    <h3 class="text-lg font-semibold text-white text-center sm:text-left">Ajouter un projet</h3>
 
-    <input v-model="title" placeholder="Titre" class="w-full p-3 rounded-md bg-gray-800/60 border border-gray-700 text-white" required />
-    <input v-model="type" placeholder="Type (site vitrine, application...)" class="w-full p-3 rounded-md bg-gray-800/60 border border-gray-700 text-white" required />
-    <input v-model="image" placeholder="URL image (optionnel)" class="w-full p-3 rounded-md bg-gray-800/60 border border-gray-700 text-white" />
-    <textarea v-model="description" placeholder="Description complète" class="w-full p-3 rounded-md bg-gray-800/60 border border-gray-700 text-white" rows="4" required></textarea>
+    <input
+      v-model="title"
+      placeholder="Titre"
+      class="w-full p-3 rounded-md bg-gray-800/60 border border-gray-700 text-white"
+      required
+    />
+    <input
+      v-model="type"
+      placeholder="Type (site vitrine, application...)"
+      class="w-full p-3 rounded-md bg-gray-800/60 border border-gray-700 text-white"
+      required
+    />
+    <input
+      v-model="image"
+      placeholder="URL image (optionnel)"
+      class="w-full p-3 rounded-md bg-gray-800/60 border border-gray-700 text-white"
+    />
+    <textarea
+      v-model="description"
+      placeholder="Description complète"
+      class="w-full p-3 rounded-md bg-gray-800/60 border border-gray-700 text-white"
+      rows="4"
+      required
+    ></textarea>
 
-    <div class="flex gap-2">
-      <input v-model="stackInput" placeholder="Ajouter une techno et appuyer sur Entrée" @keyup.enter.prevent="addStack" class="flex-1 p-3 rounded-md bg-gray-800/60 border border-gray-700 text-white" />
-      <button type="button" @click="addStack" class="px-4 py-2 bg-indigo-600 rounded-md">Add</button>
+    <!-- Ajout techno responsive -->
+    <div class="flex flex-col sm:flex-row gap-2">
+      <input
+        v-model="stackInput"
+        placeholder="Ajouter une techno et appuyer sur Entrée"
+        @keyup.enter.prevent="addStack"
+        class="flex-1 p-3 rounded-md bg-gray-800/60 border border-gray-700 text-white w-full"
+      />
+      <button
+        type="button"
+        @click="addStack"
+        class="px-4 py-2 bg-indigo-600 rounded-md w-full sm:w-auto"
+      >
+        Add
+      </button>
     </div>
 
+    <!-- Liste des technos -->
     <div class="flex flex-wrap gap-2">
-      <span v-for="(s, i) in stack" :key="i" class="px-3 py-1 bg-gray-700 rounded-full text-sm ">
-        {{ s }} <button @click="removeStack(i)" type="button" class="ml-2 text-xs ">✕</button>
+      <span
+        v-for="(s, i) in stack"
+        :key="i"
+        class="px-3 py-1 bg-gray-700 rounded-full text-sm flex items-center gap-1"
+      >
+        {{ s }}
+        <button @click="removeStack(i)" type="button" class="text-xs text-red-400 hover:text-red-600">
+          ✕
+        </button>
       </span>
     </div>
 
-    <div class="flex justify-end gap-2">
-      <button type="button" @click="reset" class="px-4 py-2 border rounded-md text-white">Réinitialiser</button>
-      <button type="submit" class="btn-primary">Ajouter</button>
+    <!-- Boutons submit / reset -->
+    <div class="flex flex-col sm:flex-row justify-end gap-2">
+      <button
+        type="button"
+        @click="reset"
+        class="px-4 py-2 border rounded-md text-white w-full sm:w-auto"
+      >
+        Réinitialiser
+      </button>
+      <button
+        type="submit"
+        class="btn-primary w-full sm:w-auto"
+      >
+        Ajouter
+      </button>
     </div>
   </form>
 </template>
@@ -63,10 +115,11 @@ function onSubmit() {
     stack: stack.value
   });
   reset();
-  // Optionnel : scroll to top or show toast
 }
 </script>
 
 <style scoped>
-.card { /* keep small local fallback just in case */ }
+.card {
+  /* fallback minimal style */
+}
 </style>
