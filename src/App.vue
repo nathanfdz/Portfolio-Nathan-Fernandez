@@ -1,5 +1,7 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-b from-gray-900 to-black">
+  <div
+    class="min-h-screen bg-gradient-to-b from-gray-900 to-black dark:from-black dark:to-gray-900 transition-colors duration-300"
+  >
     <Header />
 
     <main class="container mx-auto px-6">
@@ -23,7 +25,8 @@ export default {
 </script>
 
 <style>
-/* Transition fade + slide */
+/* --- ANIMATION ROUTES : Fade + Slide --- */
+
 .fade-slide-enter-active,
 .fade-slide-leave-active {
   transition: all 0.5s ease;
