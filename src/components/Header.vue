@@ -51,13 +51,25 @@ function toggleMenu() {
       <!-- Burger menu mobile -->
       <div class="md:hidden flex items-center gap-2">
         <button @click="toggleMenu" class="focus:outline-none z-50">
-          <!-- burger reste blanc sur fond sombre, noir sur fond clair -->
-          <span class="block w-6 h-0.5 mb-1 transition-transform"
-                :class="mobileMenuOpen ? 'rotate-45 translate-y-1.5 bg-black' : 'bg-black'"></span>
-          <span class="block w-6 h-0.5 mb-1 transition-opacity"
-                :class="mobileMenuOpen ? 'opacity-0' : 'opacity-100 bg-black'"></span>
-          <span class="block w-6 h-0.5 transition-transform"
-                :class="mobileMenuOpen ? '-rotate-45 -translate-y-1.5 bg-black' : 'bg-black'"></span>
+          <!-- burger: blanc en mode dark toujours -->
+          <span
+            class="block w-6 h-0.5 mb-1 transition-transform"
+            :class="mobileMenuOpen
+              ? 'rotate-45 translate-y-1.5 bg-black dark:bg-white'
+              : 'bg-black dark:bg-white'"
+          ></span>
+          <span
+            class="block w-6 h-0.5 mb-1 transition-opacity"
+            :class="mobileMenuOpen
+              ? 'opacity-0 bg-black dark:bg-white'
+              : 'opacity-100 bg-black dark:bg-white'"
+          ></span>
+          <span
+            class="block w-6 h-0.5 transition-transform"
+            :class="mobileMenuOpen
+              ? '-rotate-45 -translate-y-1.5 bg-black dark:bg-white'
+              : 'bg-black dark:bg-white'"
+          ></span>
         </button>
         <DarkModeToggle />
       </div>
