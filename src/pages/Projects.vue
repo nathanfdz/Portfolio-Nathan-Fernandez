@@ -6,12 +6,12 @@
 
     <div class="flex flex-col lg:flex-row gap-6">
       <!-- Formulaire côté gauche -->
-      <div class="lg:w-1/3 w-full">
+      <div class="lg:w-1/3 w-full flex-shrink-0 max-w-full">
         <ProjectForm />
       </div>
 
       <!-- Projets côté droit -->
-      <div class="lg:w-2/3 w-full">
+      <div class="lg:w-2/3 w-full max-w-full">
         <!-- Barre de recherche et filtre -->
         <div class="mb-4 flex flex-col sm:flex-row gap-2">
           <input
