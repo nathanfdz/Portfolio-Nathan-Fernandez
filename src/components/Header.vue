@@ -9,13 +9,30 @@ import DarkModeToggle from "./DarkModeToggle.vue";
   >
     <nav class="container mx-auto flex items-center justify-between p-4">
       <div class="flex items-center gap-4">
-        <router-link to="/" class="text-xl font-bold text-indigo-400">Nathan Fernandez Puente</router-link>
+        <!-- Texte principal : indigo en sombre, noir en clair -->
+        <router-link to="/" class="text-gray-900 dark:text-indigo-400 text-xl font-bold">
+          Nathan Fernandez Puente
+        </router-link>
       </div>
 
       <div class="flex items-center gap-4">
-        <ul class="hidden md:flex gap-6 text-gray-200">
-          <li><router-link to="/">Accueil</router-link></li>
-          <li><router-link to="/projects">Projets</router-link></li>
+        <ul class="hidden md:flex gap-6">
+          <li>
+            <router-link 
+              to="/" 
+              class="text-gray-900 dark:text-gray-200 hover:text-gray-700 dark:hover:text-gray-400"
+            >
+              <strong>Accueil</strong>
+            </router-link>
+          </li>
+          <li>
+            <router-link 
+              to="/projects" 
+              class="text-gray-900 dark:text-gray-200 hover:text-gray-700 dark:hover:text-gray-400"
+            >
+             <strong>Projets</strong>
+            </router-link>
+          </li>
         </ul>
 
         <DarkModeToggle />
@@ -26,12 +43,6 @@ import DarkModeToggle from "./DarkModeToggle.vue";
 
 <style scoped>
 /* Barre violette sous le lien actif */
-ul li a {
-  position: relative;
-  padding-bottom: 4px;
-  transition: color 0.2s;
-}
-
 ul li a.router-link-active::after,
 ul li a.router-link-exact-active::after {
   content: "";
@@ -45,7 +56,7 @@ ul li a.router-link-exact-active::after {
   transition: all 0.3s ease;
 }
 
-/* Optionnel : effet hover */
+/* Optionnel : effet hover barre violette */
 ul li a:hover::after {
   content: "";
   position: absolute;

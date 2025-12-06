@@ -23,11 +23,14 @@ function toggleTheme() {
 <template>
   <button
     @click="toggleTheme"
-    class="w-12 h-6 bg-gray-300 dark:bg-gray-700 rounded-full p-1 flex items-center transition duration-300"
+    class="w-16 h-8 bg-gray-300 dark:bg-gray-700 rounded-full p-1 flex items-center transition duration-300 relative"
   >
+    <!-- Curseur = icône -->
     <span
-      class="w-4 h-4 bg-white rounded-full shadow transform transition duration-300"
-      :class="isDark ? 'translate-x-6' : ''"
-    ></span>
+      class="absolute top-1/2 transform -translate-y-1/2 text-lg transition-all duration-300"
+      :class="isDark ? 'left-10 text-yellow-400' : 'left-1 text-blue-400'"
+    >
+      {{ isDark ? '🌙' : '☀️' }}
+    </span>
   </button>
 </template>
