@@ -1,8 +1,8 @@
 <template>
-  <section class="flex flex-col items-center justify-center min-h-screen text-center pt-28">
-    <h1 class="text-5xl font-bold text-white">Nathan Fernandez Puente</h1>
-    <h2 class="text-xl text-gray-400 mt-2">Développeur Web & Application</h2>
-    <p class="mt-4 max-w-xl text-gray-300">
+  <section class="flex flex-col items-center justify-center min-h-screen text-center pt-28 bg-white dark:bg-gray-900 transition-colors duration-300">
+    <h1 class="text-5xl font-bold text-gray-900 dark:text-white">Nathan Fernandez Puente</h1>
+    <h2 class="text-xl text-gray-700 dark:text-gray-400 mt-2">Développeur Web & Application</h2>
+    <p class="mt-4 max-w-xl text-gray-600 dark:text-gray-300">
       Je conçois des applications web et mobile
     </p>
 
@@ -13,12 +13,14 @@
       >
         Voir mes projets
       </router-link>
+
       <button
         @click="scrollToSection('about')"
         class="px-6 py-3 font-bold bg-primary rounded-lg hover:bg-purple-700 transition hover:text-white"
       >
         À propos
       </button>
+
       <button
         @click="scrollToSection('skills')"
         class="px-6 py-3 font-bold bg-primary rounded-lg hover:bg-purple-700 transition hover:text-white"
@@ -33,8 +35,7 @@
         Services
       </button>
 
-
-            <button
+      <button
         @click="scrollToSection('contact')"
         class="px-6 py-3 font-bold bg-primary rounded-lg hover:bg-purple-700 transition hover:text-white"
       >
@@ -58,3 +59,7 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+/* Les classes Tailwind gèrent déjà les couleurs et transitions, pas besoin de styles supplémentaires */
+</style>

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="min-h-screen bg-gradient-to-b from-gray-900 to-black dark:from-black dark:to-gray-900 transition-colors duration-300"
+    class="min-h-screen bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-black transition-colors duration-300"
   >
     <Header />
 
